@@ -19,9 +19,19 @@
   src: url('./assets/fonts/proximanova-semibold.woff2') format('woff2');
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-18: 18px;
+  --font-24: 24px;
+  --font-28: 28px;
+  --font-46: 46px;
+  --yellow: #FFE600;
+  --gray-light: #EEEEEE;
+  --gray-bold: #666666;
+  --gray: #999999;
+  --dark: #333333;
+  --white: #ffffff;
 }
 
 * {
@@ -31,16 +41,16 @@ body {
   padding: 0;
 }
 
-:root {
-  --font-14: 14px;
-  --font-18: 18px;
-  --font-24: 24px;
-  --font-28: 28px;
-  --font-46: 46px;
-  --yellow: #FFE600;
-  --gray-light: #EEEEEE;
-  --gray-medium: #666666;
-  --gray: #999999;
-  --dark: #333333;
-  --white: #ffffff;
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--gray-light);
+}
+
+.view {
+  width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 4px;
 }

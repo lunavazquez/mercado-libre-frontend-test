@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Comienza a buscar tus productos</div>;
+  return <div className="view">Comienza a buscar tus productos</div>;
 }
