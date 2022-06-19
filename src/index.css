@@ -26,11 +26,12 @@
   --font-24: 24px;
   --font-28: 28px;
   --font-46: 46px;
-  --yellow: #FFE600;
+  --blue: #3483FA;
+  --dark: #333333;
   --gray-light: #EEEEEE;
   --gray-bold: #666666;
   --gray: #999999;
-  --dark: #333333;
+  --yellow: #FFE600;
   --white: #ffffff;
 }
 
