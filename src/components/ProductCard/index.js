@@ -13,6 +13,7 @@ export default function ProductCard({
   const options2 = { style: 'currency', currency: 'ARS' };
   const numberFormat = new Intl.NumberFormat('es-AR', options2);
   const formatPrice = numberFormat.format(price);
+
   return (
     <Link to={`/items/${id}`}>
       <div className={styles.cardContainer}>
