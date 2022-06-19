@@ -16,7 +16,22 @@ export default function ProductList() {
   return (
     <div className="view">
       {items.map(item => {
-        return <ProductCard key={item.id} />;
+        console.log(item);
+        return (
+          <ProductCard
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            price={item.price}
+            seller={item.seller_address.state.name}
+            image={item.thumbnail}
+            status={
+              item.attributes.find(
+                attribute => attribute.id === 'ITEM_CONDITION'
+              ).value_name
+            }
+          />
+        );
       })}
     </div>
   );
