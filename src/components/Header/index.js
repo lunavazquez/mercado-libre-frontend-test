@@ -1,19 +1,32 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/Logo_ML.png';
 import iconSerch from '../../assets/icons/ic_Search.png';
-
 import styles from './index.module.sass';
 
 export default function Header() {
+  const navigate = useNavigate();
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const searchValue = event.target.elements.search.value;
+    if (searchValue) {
+      navigate(`/items?search=${searchValue}`, { replace: true });
+    } else {
+      navigate('/', { replace: true });
+    }
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.searchContent}>
         <Link to="/" className={styles.imageContent}>
           <img src={logo} alt="Mercado Libre" />
         </Link>
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <input
             className={styles.input}
+            name="search"
             type="text"
             placeholder="Nunca dejes de buscar"
           />
