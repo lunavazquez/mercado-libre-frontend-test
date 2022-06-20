@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mercado-libre-frontend-test/static/css/main.5bd0d706.css",
+    "main.js": "/mercado-libre-frontend-test/static/js/main.ac43cebc.js",
+    "static/js/787.60fcaa98.chunk.js": "/mercado-libre-frontend-test/static/js/787.60fcaa98.chunk.js",
+    "static/media/proximanova-light.woff2": "/mercado-libre-frontend-test/static/media/proximanova-light.0029417e7bf70872da0b.woff2",
+    "static/media/proximanova-regular.woff2": "/mercado-libre-frontend-test/static/media/proximanova-regular.83259c64b968610cd01d.woff2",
+    "static/media/proximanova-semibold.woff2": "/mercado-libre-frontend-test/static/media/proximanova-semibold.f5be6391b605f918031c.woff2",
+    "index.html": "/mercado-libre-frontend-test/index.html",
+    "main.5bd0d706.css.map": "/mercado-libre-frontend-test/static/css/main.5bd0d706.css.map",
+    "main.ac43cebc.js.map": "/mercado-libre-frontend-test/static/js/main.ac43cebc.js.map",
+    "787.60fcaa98.chunk.js.map": "/mercado-libre-frontend-test/static/js/787.60fcaa98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bd0d706.css",
+    "static/js/main.ac43cebc.js"
+  ]
+}
